@@ -1,0 +1,16 @@
+C:\Users\SGDan\Desktop\Code\RandomLatin\SentenceGenerator\bin\Debug\netcoreapp3.1\SentenceGenerator.exe
+C:\Users\SGDan\Desktop\Code\RandomLatin\SentenceGenerator\bin\Debug\netcoreapp3.1\SentenceGenerator.deps.json
+C:\Users\SGDan\Desktop\Code\RandomLatin\SentenceGenerator\bin\Debug\netcoreapp3.1\SentenceGenerator.runtimeconfig.json
+C:\Users\SGDan\Desktop\Code\RandomLatin\SentenceGenerator\bin\Debug\netcoreapp3.1\SentenceGenerator.runtimeconfig.dev.json
+C:\Users\SGDan\Desktop\Code\RandomLatin\SentenceGenerator\bin\Debug\netcoreapp3.1\SentenceGenerator.dll
+C:\Users\SGDan\Desktop\Code\RandomLatin\SentenceGenerator\bin\Debug\netcoreapp3.1\SentenceGenerator.pdb
+C:\Users\SGDan\Desktop\Code\RandomLatin\SentenceGenerator\obj\Debug\netcoreapp3.1\SentenceGenerator.AssemblyInfoInputs.cache
+C:\Users\SGDan\Desktop\Code\RandomLatin\SentenceGenerator\obj\Debug\netcoreapp3.1\SentenceGenerator.AssemblyInfo.cs
+C:\Users\SGDan\Desktop\Code\RandomLatin\SentenceGenerator\obj\Debug\netcoreapp3.1\SentenceGenerator.csproj.CoreCompileInputs.cache
+C:\Users\SGDan\Desktop\Code\RandomLatin\SentenceGenerator\obj\Debug\netcoreapp3.1\SentenceGenerator.dll
+C:\Users\SGDan\Desktop\Code\RandomLatin\SentenceGenerator\obj\Debug\netcoreapp3.1\SentenceGenerator.pdb
+C:\Users\SGDan\Desktop\Code\RandomLatin\SentenceGenerator\obj\Debug\netcoreapp3.1\SentenceGenerator.genruntimeconfig.cache
+C:\Users\SGDan\Desktop\Code\RandomLatin\SentenceGenerator\bin\Debug\netcoreapp3.1\LatinWords.dll
+C:\Users\SGDan\Desktop\Code\RandomLatin\SentenceGenerator\bin\Debug\netcoreapp3.1\LatinWords.pdb
+C:\Users\SGDan\Desktop\Code\RandomLatin\SentenceGenerator\obj\Debug\netcoreapp3.1\SentenceGenerator.csprojAssemblyReference.cache
+C:\Users\SGDan\Desktop\Code\RandomLatin\SentenceGenerator\obj\Debug\netcoreapp3.1\SentenceGenerator.csproj.CopyComplete

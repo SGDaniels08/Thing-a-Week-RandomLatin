@@ -1,0 +1,9 @@
+C:\Users\SGDan\Desktop\Code\RandomLatin\LatinWords\obj\Debug\netcoreapp3.1\LatinWords.csprojAssemblyReference.cache
+C:\Users\SGDan\Desktop\Code\RandomLatin\LatinWords\obj\Debug\netcoreapp3.1\LatinWords.AssemblyInfoInputs.cache
+C:\Users\SGDan\Desktop\Code\RandomLatin\LatinWords\obj\Debug\netcoreapp3.1\LatinWords.AssemblyInfo.cs
+C:\Users\SGDan\Desktop\Code\RandomLatin\LatinWords\obj\Debug\netcoreapp3.1\LatinWords.csproj.CoreCompileInputs.cache
+C:\Users\SGDan\Desktop\Code\RandomLatin\LatinWords\bin\Debug\netcoreapp3.1\LatinWords.deps.json
+C:\Users\SGDan\Desktop\Code\RandomLatin\LatinWords\bin\Debug\netcoreapp3.1\LatinWords.dll
+C:\Users\SGDan\Desktop\Code\RandomLatin\LatinWords\bin\Debug\netcoreapp3.1\LatinWords.pdb
+C:\Users\SGDan\Desktop\Code\RandomLatin\LatinWords\obj\Debug\netcoreapp3.1\LatinWords.dll
+C:\Users\SGDan\Desktop\Code\RandomLatin\LatinWords\obj\Debug\netcoreapp3.1\LatinWords.pdb

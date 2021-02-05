@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "SentenceGenerator/1.0.0": {
+        "dependencies": {
+          "LatinWords": "1.0.0"
+        },
+        "runtime": {
+          "SentenceGenerator.dll": {}
+        }
+      },
+      "LatinWords/1.0.0": {
+        "runtime": {
+          "LatinWords.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "SentenceGenerator/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "LatinWords/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
