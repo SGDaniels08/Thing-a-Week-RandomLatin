@@ -28,7 +28,7 @@ namespace SentenceGenerator
 
                 if (input == "1")
                 {
-                    nominative = ng.CreateNominative();
+                    nominative = ng.CreateNominativeNoun();
                     sentence.Add(nominative);
                 }
                 if (input == "2")

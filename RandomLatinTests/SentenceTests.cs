@@ -10,22 +10,42 @@ namespace RandomLatinTests
         [TestMethod]
         public void CreateNominativeReturnsNominativeNoun()
         {
-            Noun sut = new Noun();
+            NounInstance sut = new NounInstance();
             NounGenerator sut2 = new NounGenerator();
 
-            sut = sut2.CreateNominative();
+            sut = sut2.CreateNominativeNoun();
 
-            Assert.AreEqual(sut.Case, "nominative");
+            Assert.AreEqual(sut.Case, Case.Nominative);
+        }
+        [TestMethod]
+        public void CreateNominativeGeneratesRandomGender()
+        {
+            NounInstance sut = new NounInstance();
+            NounGenerator sut2 = new NounGenerator();
+
+            sut = sut2.CreateNominativeNoun();
+
+            Assert.IsTrue(sut.Gender == Gender.Masculine || sut.Gender == Gender.Feminine || sut.Gender == Gender.Neuter);
+        }
+        [TestMethod]
+        public void CreateNominativeGeneratesRandomGenderNumeric()
+        {
+            NounInstance sut = new NounInstance();
+            NounGenerator sut2 = new NounGenerator();
+
+            sut = sut2.CreateNominativeNoun();
+
+            Assert.IsTrue((int) sut.Gender >= 0 && (int) sut.Gender < 3);
         }
         [TestMethod]
         public void CreateNominativeGeneratesRandomNumber()
         {
-            Noun sut = new Noun();
+            NounInstance sut = new NounInstance();
             NounGenerator sut2 = new NounGenerator();
 
-            sut = sut2.CreateNominative();
+            sut = sut2.CreateNominativeNoun();
 
-            Assert.IsTrue(sut.Number == "singular" || sut.Number == "plural");
+            Assert.IsTrue(sut.Number == Number.Singular || sut.Number == Number.Plural);
         }
     }
 }

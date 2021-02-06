@@ -20,8 +20,8 @@ namespace SentenceGenerator
             {
                 if (word.PartOfSpeech == PartOfSpeech.Noun)
                 {
-                    Noun temp = word as Noun;
-                    if (temp.Case == "nominative")
+                    NounInstance temp = word as NounInstance;
+                    if (temp.Case == Case.Nominative)
                     {
                         return true;
                     }
