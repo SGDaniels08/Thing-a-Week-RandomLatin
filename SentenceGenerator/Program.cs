@@ -10,9 +10,10 @@ namespace SentenceGenerator
         {
             NounInstance nominative;
             NounInstance accusative;
-            Verb verb;
+            VerbInstance verb;
             List<Word> sentence = new List<Word>();
             NounGenerator ng = new NounGenerator();
+            VerbGenerator vg = new VerbGenerator();
             string input;
 
             Console.WriteLine("Welcome to Random Latin Generator!");
@@ -29,23 +30,25 @@ namespace SentenceGenerator
                 if (input == "1")
                 {
                     nominative = ng.CreateNominativeInstance();
-                    nominative.ActualWord = nominative.GetDeclinedForm();
+                    nominative.ParsedForm = nominative.GetParsedForm();
                     sentence.Add(nominative);
                 }
                 if (input == "2")
                 {
                     accusative = ng.CreateAccusativeInstance();
-                    accusative.ActualWord = accusative.GetDeclinedForm();
+                    accusative.ParsedForm = accusative.GetParsedForm();
                     sentence.Add(accusative);
                 }
                 if (input == "3")
                 {
-                    Console.WriteLine("VERB");
+                    verb = vg.CreateRandomVerb();
+                    verb.ParsedForm = verb.GetParsedForm();
+                    sentence.Add(verb);
                 }
 
                 foreach (Word word in sentence)
                 {
-                    Console.Write($"{word.ActualWord} ");
+                    Console.Write($"{word.ParsedForm} ");
                 }
                 Console.WriteLine("");
             } while (input != "Q");

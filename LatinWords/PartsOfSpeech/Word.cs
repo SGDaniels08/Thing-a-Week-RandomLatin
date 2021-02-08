@@ -8,7 +8,8 @@ namespace LatinWords
     {
         // Properties
         public PartOfSpeech PartOfSpeech { get; set; }
-        public string ActualWord { get; set; }
+        public string ParsedForm { get; set; }
+        public string Meaning { get; set; }
         public bool IsRegular { get; set; }
     }
 }

@@ -9,15 +9,14 @@ namespace LatinWords
     {
         public Number Number { get; set; }
         public Case Case { get; set; }
-        public string DeclinedForm { get; set; }
 
-        public string GetDeclinedForm()
+        public string GetParsedForm()
         {
-            DeclinedForm = GetNounStem();
+            ParsedForm = GetNounStem();
             DeclensionChart chart = GetDeclensionChart();
-            DeclinedForm += GetNounEnding(chart);
+            ParsedForm += GetNounEnding(chart);
 
-            return DeclinedForm;
+            return ParsedForm;
         }
 
         private string GetNounEnding(DeclensionChart chart)
@@ -58,11 +57,11 @@ namespace LatinWords
         private DeclensionChart GetDeclensionChart()
         {
             if (this.Declension == Declension.First) 
-                return DeclensionConstants.FirstDeclension;
+                return NounConstants.FirstDeclension;
             if (this.Declension == Declension.Second)
-                return DeclensionConstants.SecondDeclension_us;
+                return NounConstants.SecondDeclension_us;
             else
-                return DeclensionConstants.FirstDeclension;
+                return NounConstants.FirstDeclension;
         }
 
         private string GetNounStem()

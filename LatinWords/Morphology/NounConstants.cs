@@ -4,7 +4,7 @@ using System.Text;
 
 namespace LatinWords.Morphology
 {
-    public static class DeclensionConstants
+    public static class NounConstants
     {
         public static DeclensionChart FirstDeclension = new DeclensionChart
         {

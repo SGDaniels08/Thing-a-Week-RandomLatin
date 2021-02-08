@@ -6,8 +6,7 @@ namespace LatinWords
 {
     public enum Voice
     {
-        Masculine,
-        Feminine,
-        Neuter
+        Active,
+        Passive
     }
 }
