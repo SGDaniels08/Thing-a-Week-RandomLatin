@@ -8,8 +8,8 @@ namespace SentenceGenerator
     {
         static void Main(string[] args)
         {
-            Noun nominative;
-            Noun accusative;
+            NounInstance nominative;
+            NounInstance accusative;
             Verb verb;
             List<Word> sentence = new List<Word>();
             NounGenerator ng = new NounGenerator();
@@ -28,17 +28,26 @@ namespace SentenceGenerator
 
                 if (input == "1")
                 {
-                    nominative = ng.CreateNominativeNoun();
+                    nominative = ng.CreateNominativeInstance();
+                    nominative.ActualWord = nominative.GetDeclinedForm();
                     sentence.Add(nominative);
                 }
                 if (input == "2")
                 {
-                    Console.WriteLine("ACCUSATIVE NOUN");
+                    accusative = ng.CreateAccusativeInstance();
+                    accusative.ActualWord = accusative.GetDeclinedForm();
+                    sentence.Add(accusative);
                 }
                 if (input == "3")
                 {
                     Console.WriteLine("VERB");
                 }
+
+                foreach (Word word in sentence)
+                {
+                    Console.Write($"{word.ActualWord} ");
+                }
+                Console.WriteLine("");
             } while (input != "Q");
         }
     }

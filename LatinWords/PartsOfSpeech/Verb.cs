@@ -14,5 +14,10 @@ namespace LatinWords
         public string FourthPrincipalPart { get; set; }
         public bool IsDeponent { get; set; }
         public bool IsSemiDeponent { get; set; }
+
+        public Verb()
+        {
+            this.PartOfSpeech = PartOfSpeech.Verb;
+        }
     }
 }

@@ -8,6 +8,7 @@ namespace LatinWords
     {
         // Properties
         public PartOfSpeech PartOfSpeech { get; set; }
+        public string ActualWord { get; set; }
         public bool IsRegular { get; set; }
     }
 }

@@ -30,6 +30,13 @@ namespace SentenceGenerator
             return false;
         }
 
+        public void PrintSentence()
+        {
+            foreach (Word word in sentence)
+            {
+
+            }
+        }
 
     }
 }

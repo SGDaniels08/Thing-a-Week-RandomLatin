@@ -10,28 +10,35 @@ namespace SentenceGenerator
         // Properties
         private NounInstance Noun { get; set; }
         private readonly Random rand;
+        private readonly WordList vocabList;
 
         public NounGenerator()
         {
             rand = new Random();
+            vocabList = new WordList();
         }
-        public NounInstance CreateNominativeNoun(List<Word> sentence = null)
+        public NounInstance CreateNominativeInstance(List<Word> sentence = null)
         {
-            if (Noun == null)
-                Noun = new NounInstance();
+            // Pick a random noun from the word-list (principal parts, declension, meaning, etc.)
+            Noun = vocabList.GetRandomNoun();
 
-            // See if there is already a nominative or a verb
-            Noun.Gender = GetRandomGender();
+            // Fill out other noun elements (gender, number, case)
             Noun.Number = GetRandomNumber();
             Noun.Case = Case.Nominative;
             return Noun;
         }
 
-        private Gender GetRandomGender()
+        public NounInstance CreateAccusativeInstance(List<Word> sentence = null)
         {
-            int genderCount = 3;
-            return (Gender) rand.Next(0, genderCount - 1);
+            // Pick a random noun from the word-list (principal parts, declension, meaning, etc.)
+            Noun = vocabList.GetRandomNoun();
+
+            // Fill out other noun elements (gender, number, case)
+            Noun.Number = GetRandomNumber();
+            Noun.Case = Case.Accusative;
+            return Noun;
         }
+
         private Number GetRandomNumber()
         {
             int numberCount = 2;

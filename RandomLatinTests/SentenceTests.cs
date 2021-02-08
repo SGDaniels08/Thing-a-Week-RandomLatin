@@ -13,7 +13,7 @@ namespace RandomLatinTests
             NounInstance sut = new NounInstance();
             NounGenerator sut2 = new NounGenerator();
 
-            sut = sut2.CreateNominativeNoun();
+            sut = sut2.CreateNominativeInstance();
 
             Assert.AreEqual(sut.Case, Case.Nominative);
         }
@@ -23,7 +23,7 @@ namespace RandomLatinTests
             NounInstance sut = new NounInstance();
             NounGenerator sut2 = new NounGenerator();
 
-            sut = sut2.CreateNominativeNoun();
+            sut = sut2.CreateNominativeInstance();
 
             Assert.IsTrue(sut.Gender == Gender.Masculine || sut.Gender == Gender.Feminine || sut.Gender == Gender.Neuter);
         }
@@ -33,7 +33,7 @@ namespace RandomLatinTests
             NounInstance sut = new NounInstance();
             NounGenerator sut2 = new NounGenerator();
 
-            sut = sut2.CreateNominativeNoun();
+            sut = sut2.CreateNominativeInstance();
 
             Assert.IsTrue((int) sut.Gender >= 0 && (int) sut.Gender < 3);
         }
@@ -43,7 +43,7 @@ namespace RandomLatinTests
             NounInstance sut = new NounInstance();
             NounGenerator sut2 = new NounGenerator();
 
-            sut = sut2.CreateNominativeNoun();
+            sut = sut2.CreateNominativeInstance();
 
             Assert.IsTrue(sut.Number == Number.Singular || sut.Number == Number.Plural);
         }
